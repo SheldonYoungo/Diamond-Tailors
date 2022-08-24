@@ -1,4 +1,4 @@
-/* Global */
+/* ------Global------- */
 
 * {
   margin: 0;
@@ -25,54 +25,74 @@ body {
   color: var(--dark-blue);
 }
 
+/* Global font sizes */
+
 .header__content--title,
 .description__title,
-.services__header {
+.services__header 
+{
   font-size: var(--header-font-size);
 }
 
 .description__item--text h2,
 .services__card--title,
 .contact-title,
-.contact__icons-container  {
+.contact__icons-container  
+{
   font-size: var(--subtitles-font-size);
 }
+
+.navbar, 
+.header__content--slogan,
+.description__item--text p,
+.services__card p 
+{
+  font-size: var(--regular--text-font-size);
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+/* Global colors */
 
 .header__content--title,
 .header__content--slogan em,
 .description__title,
 .description__item--text h2,
 .services__header,
-.services__card--title {
+.services__card--title 
+{
   color: var(--light-gold);
 }
 
 .navbar__toggle-btn,
 .header__content--slogan,
-.description__item--text p {
+.description__item--text p 
+{
   color: var(--white);
 }
 
-.navbar, 
-.header__content--slogan,
-.description__item--text p,
-.services__card p {
-  font-size: var(--regular--text-font-size);
-  font-family: 'Kdam Thmor Pro', sans-serif;
+/* Global containers styles */
+
+.description__title,
+.services__header
+{
+  padding: 2rem;
 }
 
 .navbar,
 .description__title,
-.footer { 
+.footer 
+{ 
   background-color: var(--dark-blue);
 }
 
-.description__title,
-.services__header {
-  padding: 2rem;
+.header,
+.description,
+.services
+{
+  background-size: 100vw 100% !important;
 }
 
-/* Navigation bar */
+/*------- Navigation bar --------*/
 
 .navbar {
   position: fixed;
@@ -109,7 +129,7 @@ body {
 }
 
 
-.navbar__list--items a{
+.navbar__list--items a {
   color: var(--white);
   text-decoration: none;
   transition: .2s;
@@ -118,20 +138,19 @@ body {
 .navbar__list--items:hover, 
 .navbar__list--items a:hover,
 .navbar__list--items:focus, 
-.navbar__list--items a:focus {
+.navbar__list--items a:focus 
+{
   transition: .2s;
-  
   color: var(--light-gold);
   border-bottom: solid 2px var(--light-gold);
   
 }
  
-/* Header section */
+/*------ Header section -------*/
 
 .header {
   padding: 38vh 5vw;
   background: var(--translucent-black-bg), url('images/header-bg.jpg');
-  background-size: cover;
   text-align: center;
 }
 
@@ -142,7 +161,7 @@ body {
   border: solid 8px;
 }
 
-/* Description section*/
+/*----- Description section -------*/
 
 .description {
   background: url('images/description-bg.jpg');
@@ -177,7 +196,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Services section */
+/*------- Services section ---------*/
 
 .services {
   background: url('images/services-bg.jpg');
@@ -225,12 +244,12 @@ body {
   background: var(--translucent-black-bg), url('images/service-card-dresses.jpg');
 }
 .services__card--title {
-  padding: 9.0625rem;
+  padding: 7.0625rem;
   background-size: cover !important;
   text-align: center;
 }
 
-/* Contact section */
+/*------- Contact section --------*/
 
 .contact {
   text-align: center;
@@ -283,7 +302,7 @@ body {
   transition: transform .3s ease-in-out;
 }
 
-/* Footer section */
+/*------- Footer section -------*/
 
 .footer {
   padding: 5rem;
@@ -308,7 +327,7 @@ body {
 
 /*----------=Responsive=------------- */
 
-/* Services section */
+/*------ Services section -------*/
 @media (max-width: 1233px) {
   .services {
     display: block;
@@ -323,12 +342,12 @@ body {
 
 @media (max-width: 1027px) {
 
-  /* Header section */
+  /*------- Header section -------*/
   .header {
     padding: 20.52rem 5vw;
   }
   
-  /* Description resonsive */ 
+  /*----- Description section ----------*/ 
   
   .description__item--text h2 {
     margin-bottom: 1.15rem;
@@ -368,7 +387,7 @@ body {
   }
 }
 
-/* Navbar responsive */
+/*-------- Navbar section -------------*/
 @media (max-width: 900px) {
   .navbar {
     display: block;
@@ -379,7 +398,6 @@ body {
     position: relative;
     left: 86vw;
     font-size: 30px;
-    margin: .5em;
     cursor: pointer;
   }
 
