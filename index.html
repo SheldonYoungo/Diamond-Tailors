@@ -24,7 +24,7 @@
       <span class="fa-solid fa-bars navbar__toggle-btn"></span>
 
       <ul class="navbar__list">
-        <li class="navbar__list--items"><a href="#header">Home</a></li>
+        <li class="navbar__list--items"><a class="selected" href="#header">Home</a></li>
         <li class="navbar__list--items"><a href="#description">About Us</a></li>
         <li class="navbar__list--items"><a href="#services">Services</a></li>
         <li class="navbar__list--items"><a href="#contact">Contact</a></li>
@@ -146,26 +146,6 @@
     crossorigin="anonymous"></script>
     <!-- Transit plugin (Helps make transitions more easlily) -->
     <script src="transitPlugin.js"></script>
-    <!-- Responsive navbar script -->
-    <script>
-      var isOpen = false;
-
-      $('.navbar__toggle-btn').click(function(){
-        if(!isOpen) {
-          $('.navbar__list').slideToggle(100, function(){
-            isOpen = true;
-          })
-
-          $('.navbar__toggle-btn').transition({rotate: '90deg'});
-
-        } else {
-          $('.navbar__list').slideToggle(100, function(){
-            isOpen = false;
-          })
-
-          $('.navbar__toggle-btn').transition({rotate: '0deg'});
-        }
-      })
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
