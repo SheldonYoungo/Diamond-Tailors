@@ -367,6 +367,7 @@ section {
   /*------- Header section -------*/
   .header {
     padding: 20.52rem 5vw;
+    background-size: cover !important;
   }
   
   /*----- Description section ----------*/ 
